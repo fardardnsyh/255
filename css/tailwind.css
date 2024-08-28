@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
+}
+
+.data-footnote-backref {
+  @apply no-underline;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+
+.katex-display {
+  overflow: auto hidden;
+}
+
+.gsc-comments .gsc-header em {
+  display: none;
+}
+
+.tip p,
+.note p,
+.danger p,
+.info p,
+.caution p {
+  margin: 0;
+}
+
+.tip > *,
+.note > *,
+.danger > *,
+.info > *,
+.caution > * {
+  color: #1c2024 !important;
+  margin-top: 10px;
+}
+
+.tip {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #3db9cf;
+  background-color: #caf1f6;
+}
+
+.note {
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #b9bbc6;
+  background-color: #e8e8ec;
+}
+
+.danger {
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #eb8e90;
+  background-color: #ffdbdc;
+}
+
+.info {
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #65ba74;
+  background-color: #daf1db;
+}
+
+.caution {
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #e2a336;
+  background-color: #ffee9c;
+}
+
+iframe {
+  margin: 0 auto;
+  max-width: 100%;
+}
